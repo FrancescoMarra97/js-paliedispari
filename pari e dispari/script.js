@@ -12,9 +12,9 @@ function getUserInputAndGenerateRandom(){
     
 
 //l'utente sceglie pari o dispari e inserisce un numero
-let message=prompt("Scegli tra 'pari' o 'dispari' ");
 //controllo sulla scelta
-if (message != "pari" || message != "dispari") {
+let userChoice=prompt("Scegli tra 'pari' o 'dispari' ");
+if (userChoice != "pari" && userChoice != "dispari") {
     alert("il messaggio non è valido!");
 }
 
@@ -26,6 +26,9 @@ if (num1<1 || num1>5 ) {
 //facciamo generare un numero random dal pc
 let num2=Math.floor(Math.random() * 5) + 1;
 
+return userChoice;
+return num1;
+return num2;
 
 }// fine prima funzione
 
