@@ -23,13 +23,20 @@ while (num1<1 || num1>5 ) {
 }
 //facciamo generare un numero random dal pc
 let num2=Math.floor(Math.random() * 5) + 1;
+console.log(userChoice, num1, num2);
 
 // funzione 
-
-//sommiamo i due numeri 
-
-
-// domma pari o dispari
+function calculateAndCheckParity(num1, num2) {
+    //sommiamo i due numeri 
+    let sum= num1+num2;
+    if (sum % 2 == 0) {
+        console.log("la somma è pari");
+    } else{
+        console.log("la somma è dispari");
+        
+    }
+    return sum;
+}
 
 
 //dichiarazione del vincitore in base al risultato
