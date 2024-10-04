@@ -5,10 +5,6 @@ Sommiamo i due numeri Stabiliamo
 se la somma dei due numeri è pari o dispari (usando una funzione) 
 Dichiariamo chi ha vinto.
  */
-
-// vuole due funzioni , dividiamo il lavoro.
-// Prima funzione 1
-function getUserInputAndGenerateRandom(){
     
 
 //l'utente sceglie pari o dispari e inserisce un numero
@@ -26,14 +22,7 @@ if (num1<1 || num1>5 ) {
 //facciamo generare un numero random dal pc
 let num2=Math.floor(Math.random() * 5) + 1;
 
-return userChoice;
-return num1;
-return num2;
-
-}// fine prima funzione
-
-
-//seconda funzione 
+// funzione 
 
 //sommiamo i due numeri 
 
