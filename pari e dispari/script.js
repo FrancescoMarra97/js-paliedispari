@@ -14,29 +14,34 @@ while(userChoice != "pari" && userChoice != "dispari") {
     alert("il messaggio non è valido!");
     userChoice=prompt("Scegli tra 'pari' o 'dispari' ");
 }
+console.log(userChoice);
+
 
 let num1=Number(prompt("inserisci un numero tra 1 e 5"));
 //controllo sul numero inserito
 while (num1<1 || num1>5 ) {
     alert("il numero non è valido");
-    num1=Number(prompt("inserisci un numero tra 1 e 5");
+    num1=Number(prompt("inserisci un numero tra 1 e 5"));
 }
+console.log(num1);
+
 //facciamo generare un numero random dal pc
 let num2=Math.floor(Math.random() * 5) + 1;
-console.log(userChoice, num1, num2);
+console.log(num2);
 
 // funzione 
 function calculateAndCheckParity(num1, num2) {
     //sommiamo i due numeri 
-    let sum= num1+num2;
-    if (sum % 2 == 0) {
-        console.log("la somma è pari");
-    } else{
-        console.log("la somma è dispari");
-        
+    let sum=num1+num2;
+    if (sum % 2 == 0 && userChoice == "pari" ) {
+        console.log("la somma è pari e l'utente ha vinto");
+    } else if (sum % 2 != 0 && userChoice == "dispari") {
+        console.log("la somma è dispari e l'utente ha vinto");
+    }else{
+        console.log("Il computer ha vinto");
     }
     return sum;
 }
-
+let sum=calculateAndCheckParity(num1, num2, userChoice);
 
 //dichiarazione del vincitore in base al risultato
